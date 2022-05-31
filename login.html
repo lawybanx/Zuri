@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!--? NAVIGATION SECTION -->
+    <nav>
+      <div class="header-logo">
+        <p>Awwal Bankole</p>
+        <div id="menu" class="fa-solid fa-bars" onclick="onClick()"></div>
+      </div>
+      <ul class="dropdown-menu">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <!--? HEADER SECTION-->
+    <header>
+      <div class="banner-image-div">
+        <img
+          class="banner-image"
+          src="https://res.cloudinary.com/dbrukzcby/image/upload/v1653316920/cyborg_nt0hf5.png"
+          alt="hero-banner"
+        />
+      </div>
+      <div class="banner-overlay-div"></div>
+      <section class="banner-text-section">
+        <span class="banner-text">
+          <form>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              title="Enter your email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            /><br />
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              title="Enter your password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            /><br />
+            <p>
+              Don't have an account? <a href="register.html">Register now</a>
+            </p>
+            <button type="submit" class="btn">Sign In</button>
+          </form>
+        </span>
+      </section>
+    </header>
+
+    <!--? BACK-TO-TOP BUTTON -->
+    <button type="reset" class="back-to-top hidden">
+      <i class="fa-solid fa-circle-arrow-up fa-3x"></i>
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
